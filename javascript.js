@@ -1,10 +1,3 @@
-list0 = [7, 3, 4, 1, 2];
-list1 = [7, 2, 3, 1];
-list2 = [7, 8, 9, 6, 5, 4, 1, 2, 3];
-list3 = [2, 1, 3, 4, 6, 5, 7, 8, 9];
-
-// the problem is when the left and right are already sorted
-
 let mergeTwoArray = (listOne, listTwo) => {
   let mergeList = [];
   let listOneLen = listOne.length;
@@ -51,6 +44,3 @@ let mergeSort = (list) => {
   let secondHalf = mergeSort(list.slice(halfIndex, listLen));
   return mergeTwoArray(firstHalf, secondHalf);
 };
-
-let listThree = [8, 4, 0, 1, 2];
-console.log(mergeSort(listThree));
